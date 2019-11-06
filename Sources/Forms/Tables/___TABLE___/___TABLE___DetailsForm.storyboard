@@ -57,7 +57,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wv-dP-J8b">
                                                         <rect key="frame" x="8" y="91" width="343" height="74"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;___FIELD_2_LABEL___&gt;" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh3-JO-jGn" customClass="IconLabel" customModule="Tasks" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;___FIELD_2_LABEL___&gt;" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh3-JO-jGn" customClass="IconLabel" customModule="___PRODUCT___" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="8" width="343" height="27.5"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                                                 <nil key="highlightedColor"/>
@@ -88,7 +88,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klm-ys-DeU">
                                                         <rect key="frame" x="0.0" y="169" width="359" height="159"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uk4-2A-ZQc" customClass="___TABLE___CustomProgressBarDetail" customModule="Tasks" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uk4-2A-ZQc" customClass="___TABLE___CustomProgressBarDetail" customModule="___PRODUCT___" customModuleProvider="target">
                                                                 <rect key="frame" x="15" y="38" width="90" height="90"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -108,7 +108,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_4___" value="graphnumber"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_4_LABEL___" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVX-HY-DfV" customClass="IconLabel" customModule="Tasks" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_4_LABEL___" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVX-HY-DfV" customClass="IconLabel" customModule="___PRODUCT___" customModuleProvider="target">
                                                                 <rect key="frame" x="15" y="3" width="90" height="28"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="28" id="zQL-qo-NDd"/>
@@ -129,7 +129,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_4___" value="___FIELD_4_BINDING_TYPE___"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vL-nu-NGI" customClass="___TABLE___CustomProgressBarDetail" customModule="Tasks" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vL-nu-NGI" customClass="___TABLE___CustomProgressBarDetail" customModule="___PRODUCT___" customModuleProvider="target">
                                                                 <rect key="frame" x="134" y="38" width="90" height="90"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -149,7 +149,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_5___" value="graphnumber"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_5_LABEL___" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQA-cX-7dJ" customClass="IconLabel" customModule="Tasks" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_5_LABEL___" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQA-cX-7dJ" customClass="IconLabel" customModule="___PRODUCT___" customModuleProvider="target">
                                                                 <rect key="frame" x="134" y="3" width="90" height="28"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
                                                                 <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -167,7 +167,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_5___" value="___FIELD_4_BINDING_TYPE___"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaU-Ok-DFm" customClass="___TABLE___CustomProgressBarDetail" customModule="Tasks" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaU-Ok-DFm" customClass="___TABLE___CustomProgressBarDetail" customModule="___PRODUCT___" customModuleProvider="target">
                                                                 <rect key="frame" x="253" y="38" width="90" height="90"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                                 <userDefinedRuntimeAttributes>
@@ -199,7 +199,7 @@
                                                                     <userDefinedRuntimeAttribute type="string" keyPath="bindTo.record.___FIELD_6___" value="___FIELD_6_BINDING_TYPE___"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_6_LABEL___" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySE-bx-4Nk" customClass="IconLabel" customModule="Tasks" customModuleProvider="target">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_6_LABEL___" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySE-bx-4Nk" customClass="IconLabel" customModule="___PRODUCT___" customModuleProvider="target">
                                                                 <rect key="frame" x="253" y="3" width="90" height="28"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
                                                                 <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
@@ -272,7 +272,7 @@
                                                                             <constraint firstItem="TAG-FD-003" firstAttribute="leading" secondItem="TAG-FD-002" secondAttribute="leading" constant="60" id="TAG-FD-009"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_LABEL___" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAG-FD-010" customClass="IconLabel" customModule="Tasks" customModuleProvider="target">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___FIELD_LABEL___" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAG-FD-010" customClass="IconLabel" customModule="___PRODUCT___" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="9" width="335" height="27.5"/>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
