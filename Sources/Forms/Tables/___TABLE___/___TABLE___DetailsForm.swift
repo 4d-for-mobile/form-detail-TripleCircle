@@ -8,9 +8,8 @@
 import UIKit
 import QMobileUI
 
-/// Generated details form for ___TABLE___ table.
+/// A progress bar.
 @IBDesignable
-
 class ___TABLE___CustomProgressBarDetail: UIView {
 
     @IBInspectable var percent: CGFloat = 0.90
@@ -35,15 +34,14 @@ class ___TABLE___CustomProgressBarDetail: UIView {
                 self.percent = nilPercent
                 return
             }
-
             percent = (CGFloat(number.doubleValue)) / 100
             setNeedsDisplay()
         }
     }
 
     override func draw(_ rect: CGRect) {
-        let X = self.bounds.midX
-        let Y = self.bounds.midY
+        let x = self.bounds.midX // swiftlint:disable:this identifier_name
+        let y = self.bounds.midY // swiftlint:disable:this identifier_name
         var strokeStart: CGFloat = self.oldpercent
         var strokeEnd: CGFloat = percent
         var size = self.frame.size.width
@@ -61,15 +59,39 @@ class ___TABLE___CustomProgressBarDetail: UIView {
             layer.transform = CATransform3DMakeRotation(radians, 0.0, 0.0, 1.0)
         }
 
-        let path = UIBezierPath(ovalIn: CGRect(x: (X - (95/2)), y: (Y - (95/2)), width: 95, height: 95)).cgPath
-
-        self.addOval(self.bgThickness, path: path, strokeStart: strokeStart, strokeEnd: 1.0, strokeColor: self.bgColor, fillColor: UIColor.clear, shadowRadius: 0, shadowOpacity: 0, shadowOffsset: CGSize.zero)
-        self.addOval2(self.thickness, path: path, strokeStart: strokeStart, strokeEnd: strokeEnd, strokeColor: self.barColor, fillColor: UIColor.clear, shadowRadius: 0, shadowOpacity: 0, shadowOffsset: CGSize.zero)
+        let ovalSize: CGFloat = 95
+        let ovalRect = CGRect(x: x - (ovalSize/2), y: y - (ovalSize/2), width: ovalSize, height: ovalSize)
+        let path = UIBezierPath(ovalIn: ovalRect).cgPath
+        self.addOval(self.bgThickness,
+                     path: path,
+                     strokeStart: strokeStart,
+                     strokeEnd: 1.0,
+                     strokeColor: self.bgColor,
+                     fillColor: .clear,
+                     shadowRadius: 0,
+                     shadowOpacity: 0,
+                     shadowOffsset: .zero)
+        self.addOval2(self.thickness,
+                      path: path,
+                      strokeStart: strokeStart,
+                      strokeEnd: strokeEnd,
+                      strokeColor: self.barColor,
+                      fillColor: .clear,
+                      shadowRadius: 0,
+                      shadowOpacity: 0,
+                      shadowOffsset: .zero)
     }
 
     // swiftlint:disable:next function_parameter_count
-    func addOval(_ lineWidth: CGFloat, path: CGPath, strokeStart: CGFloat, strokeEnd: CGFloat, strokeColor: UIColor, fillColor: UIColor, shadowRadius: CGFloat, shadowOpacity: Float, shadowOffsset: CGSize) {
-
+    func addOval(_ lineWidth: CGFloat,
+                 path: CGPath,
+                 strokeStart: CGFloat,
+                 strokeEnd: CGFloat,
+                 strokeColor: UIColor,
+                 fillColor: UIColor,
+                 shadowRadius: CGFloat,
+                 shadowOpacity: Float,
+                 shadowOffsset: CGSize) {
         arc.lineWidth = lineWidth
         arc.path = path
         arc.strokeStart = strokeStart
@@ -80,13 +102,21 @@ class ___TABLE___CustomProgressBarDetail: UIView {
         arc.shadowRadius = shadowRadius
         arc.shadowOpacity = shadowOpacity
         arc.shadowOffset = shadowOffsset
+        arc.opacity = 0.2
         arc.lineCap = .round
         layer.addSublayer(arc)
     }
 
     // swiftlint:disable:next function_parameter_count
-    func addOval2(_ lineWidth: CGFloat, path: CGPath, strokeStart: CGFloat, strokeEnd: CGFloat, strokeColor: UIColor, fillColor: UIColor, shadowRadius: CGFloat, shadowOpacity: Float, shadowOffsset: CGSize) {
-
+    func addOval2(_ lineWidth: CGFloat,
+                  path: CGPath,
+                  strokeStart: CGFloat,
+                  strokeEnd: CGFloat,
+                  strokeColor: UIColor,
+                  fillColor: UIColor,
+                  shadowRadius: CGFloat,
+                  shadowOpacity: Float,
+                  shadowOffsset: CGSize) {
         arc2.lineWidth = lineWidth
         arc2.path = path
         arc2.strokeStart = strokeStart
@@ -103,13 +133,13 @@ class ___TABLE___CustomProgressBarDetail: UIView {
 
     func animateGraph() {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
-
+        
         animation.fromValue = arc.strokeStart
         animation.toValue = arc.strokeEnd
         animation.duration = 1.5
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         arc.add(animation, forKey: "drawLineAnimation")
-
+        
         animation.fromValue = arc2.strokeStart
         animation.toValue = arc2.strokeEnd
         animation.duration = 1.5
@@ -118,6 +148,7 @@ class ___TABLE___CustomProgressBarDetail: UIView {
     }
 }
 
+/// Generated details form for ___TABLE___ table.
 class ___TABLE___DetailsForm: DetailsForm___DETAILFORMTYPE___ {
 
     /// The record displayed in this form
@@ -136,7 +167,6 @@ class ___TABLE___DetailsForm: DetailsForm___DETAILFORMTYPE___ {
 
     override func onWillAppear(_ animated: Bool) {
         // Called when the view is about to made visible. Default does nothing
-
         graphView1.isHidden = true
         graphView2.isHidden = true
         graphView3.isHidden = true
@@ -144,7 +174,6 @@ class ___TABLE___DetailsForm: DetailsForm___DETAILFORMTYPE___ {
 
     override func onDidAppear(_ animated: Bool) {
         // Called when the view has been fully transitioned onto the screen. Default does nothing
-
         graphView1.isHidden = false
         graphView2.isHidden = false
         graphView3.isHidden = false
@@ -160,7 +189,5 @@ class ___TABLE___DetailsForm: DetailsForm___DETAILFORMTYPE___ {
     override func onDidDisappear(_ animated: Bool) {
         // Called after the view was dismissed, covered or otherwise hidden. Default does nothing
     }
-
     // MARK: Custom actions
-
 }
