@@ -133,13 +133,13 @@ class ___TABLE___CustomProgressBarDetail: UIView {
 
     func animateGraph() {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
-        
+
         animation.fromValue = arc.strokeStart
         animation.toValue = arc.strokeEnd
         animation.duration = 1.5
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         arc.add(animation, forKey: "drawLineAnimation")
-        
+
         animation.fromValue = arc2.strokeStart
         animation.toValue = arc2.strokeEnd
         animation.duration = 1.5
